@@ -3,9 +3,6 @@
 **Nome:** Ana Luiza Martins Pereira  
 **Curso:** Ciências da Computação  
 
-## 🔗 Acesso ao Projeto
-👉 [Clique aqui para acessar o sistema]((http://localhost:5067))
-
 ## 💡 Descrição do Projeto
 O projeto consiste no desenvolvimento de um componente reutilizável em Blazor chamado **EcoStatus**, utilizado para monitorar ações sustentáveis como reciclagem de plástico, plantio de árvores e descarte de eletrônicos. Cada ação possui um contador interativo, um peso específico para incremento, uma meta definida e uma barra de progresso que representa visualmente o avanço até o objetivo. Ao atingir a meta, o sistema exibe uma mensagem de reconhecimento ao usuário.
 
@@ -21,7 +18,7 @@ cd EcoMonitor
 3. Execute o projeto utilizando HTTPS:  
 dotnet run --launch-profile https  
 4. Acesse no navegador:  
-https://localhost:xxxx  
+https://localhost:5067  
 
 ## ⚙️ Explicação Técnica
 O componente **EcoStatus** foi desenvolvido com foco em reutilização por meio da utilização de parâmetros. Os principais parâmetros utilizados foram: `Titulo`, responsável por definir o nome da ação exibida; `Peso`, que determina o valor incrementado no contador a cada clique; e `Meta`, que define o valor objetivo a ser atingido. Essa abordagem permite reutilizar o componente em diferentes contextos sem duplicação de código. Além disso, foi implementada uma propriedade calculada chamada `Progresso`, responsável por calcular dinamicamente a porcentagem da barra de progresso com base no valor atual e na meta, garantindo atualização automática da interface.
